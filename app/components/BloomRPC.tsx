@@ -152,7 +152,7 @@ async function hydrateEditor(setProtos: React.Dispatch<ProtoFile[]>, setEditorTa
     if (savedEditorTabs) {
       hydration.push(
         loadTabs(savedEditorTabs)
-          .catch(() => setEditorTabs({activeKey: "0", tabs: []}))
+          .catch(() => ({activeKey: "0", tabs: []}))
           .then(setEditorTabs)
           .then(() => true)
       );

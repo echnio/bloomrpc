@@ -11,7 +11,7 @@ function CheckBuildsExist() {
     '..',
     'app',
     'dist',
-    'renderer.prod.js'
+    'app.renderer.prod.js'
   );
 
   if (!fs.existsSync(mainPath)) {
